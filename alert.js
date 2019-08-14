@@ -6,3 +6,9 @@ Replace the value in the middle by “Classics”. Your code for finding the mid
 Strip off the first value of the array and show it.
 Prepend Rap and Reggae to the array.
 The array in the process: */
+
+let styles = ["Jazz", "Blues"];
+styles.push("Rock-n-Roll");
+styles[styles.length/2] = "Classics"
+
+alert(styles);
