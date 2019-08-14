@@ -1,9 +1,14 @@
-function checkSpam(str) {
-  let lowerStr = str.toLowerCase();
+//Create a function truncate(str, maxlength)
+//that checks the length of the str and,
+//if it exceeds maxlength – replaces the end of str
+//with the ellipsis character "…", to make its length equal to maxlength.
 
-  return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+function truncate(str, maxlength) {
+  if(str.length < maxlength) {
+    return str
+  } else {
+    return str.slice(0, maxlength - 3) + "..."
+  }
 }
 
-alert( checkSpam('buy ViAgRA now') );
-alert( checkSpam('free xxxxx') );
-alert( checkSpam("innocent rabbit") );
+alert(truncate("I wish I were a little bit taller", 10))
