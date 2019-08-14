@@ -1,14 +1,23 @@
-/*Let’s try 5 array operations.
+/*Write the function sumInput() that:
 
-Create an array styles with items “Jazz” and “Blues”.
-Append “Rock-n-Roll” to the end.
-Replace the value in the middle by “Classics”. Your code for finding the middle value should work for any arrays with odd length.
-Strip off the first value of the array and show it.
-Prepend Rap and Reggae to the array.
-The array in the process: */
+Asks the user for values using prompt and stores the values in the array.
+Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+Calculates and returns the sum of array items.
+P.S. A zero 0 is a valid number, please don’t stop the input on zero.*/
 
-let styles = ["Jazz", "Blues"];
-styles.push("Rock-n-Roll");
-styles[(styles.length-1)/2] = "Classics"
+function sumInput() {
+  let values = []
 
-alert(styles);
+  while(true) {
+    let userInput = prompt("Enter a number");
+
+    if(value === null || value === "" || value === !isFinite(userInput)) break;
+
+    values.push(+userInput);
+  }
+  let sum = 0;
+  for(number of values) sum += number;
+}
+return sum;
+
+alert(sumInput())
