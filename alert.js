@@ -1,11 +1,13 @@
-let str = "as sly as a fox, as strong as an ox";
+//Write a function checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false.
 
-let pos = 0;
-let target = "as";
+//The function must be case-insensitive:
 
-while(~str.indexOf(target, pos)) {
-  let found = str.indexOf(target, pos);
-  alert(`${found}`);
+function checkSpam(str) {
+  let lowStr = str.toLowercase();
+  let upStr = str.toUpperCase();
 
-  pos = found + 1;
+  return true if(lowStr.includes("viagra") || upStr.includes("XXX"));
+
 }
+
+console.log(checkSpam("VIAGRA"))
