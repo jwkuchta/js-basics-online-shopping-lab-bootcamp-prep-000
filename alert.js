@@ -1,10 +1,7 @@
 let fruits = ["oranges", "bananas", "grapes"];
 
-//for(let fruit in fruits) alert(fruit)
+for(let fruit of fruits) alert(fruit);
 
 //let fruits = ["Apple", "Orange", "Plum"];
 
 // iterates over array elements
-for (let fruit of fruits) {
-  alert( fruit );
-}
