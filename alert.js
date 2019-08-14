@@ -4,10 +4,19 @@
 
 function checkSpam(str) {
   let lowStr = str.toLowercase();
-  let upStr = str.toUpperCase();
 
-  return true if(lowStr.includes("viagra") || upStr.includes("XXX"));
+  return (lowStr.includes("viagra") || upStr.includes("XXX"));
 
 }
 
 alert(checkSpam("VIAGRA"))
+
+/*function checkSpam(str) {
+  let lowerStr = str.toLowerCase();
+
+  return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+}
+
+alert( checkSpam('buy ViAgRA now') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("innocent rabbit") );
