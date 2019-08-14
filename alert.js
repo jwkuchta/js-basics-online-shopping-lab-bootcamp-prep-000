@@ -10,4 +10,4 @@ function checkSpam(str) {
 
 }
 
-console.log(checkSpam("VIAGRA"))
+alert(checkSpam("VIAGRA"))
