@@ -14,9 +14,10 @@ function removeFromCart(item) {
     }
   }
 }
-console.log(removeFromCart("eggs"))
-console.log(cart)
-console.log(removeFromCart("tomato"))
-console.log(cart)
-console.log(removeFromCart("butter"))
-console.log(cart)
+//console.log(removeFromCart("eggs"))
+//console.log(cart)
+//console.log(removeFromCart("tomato"))
+//console.log(cart)
+//console.log(removeFromCart("butter"))
+//console.log(cart)
+console.log(Object.keys(cart[0])[1])

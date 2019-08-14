@@ -1,7 +1,7 @@
 var myCart = [
-  { item: "eggs", price: 6 },
-  { item: "butter", price: 3 },
-  { item: "avocado", price: 1 }
+  { item1: "eggs", price: 6 },
+  { item2: "butter", price: 3 },
+  { item3: "avocado", price: 1 }
 ]
 
 var cart = [];
@@ -11,8 +11,7 @@ function getCart() {
 }
 
 function setCart(c) {
-  cart = c;
-  return cart;
+  cart = c; return cart;
 }
 
 function addToCart(item) {
@@ -78,8 +77,6 @@ function removeFromCart(item) {
     return cart;
   }
 
-
-
 function placeOrder(ccNum) {
   var cart = getCart();
   var totalAmount = total();
@@ -88,5 +85,13 @@ function placeOrder(ccNum) {
   } else {
     setCart([]);
     return `Your total cost is $${totalAmount}, which will be charged to the card ${ccNum}.`
-  };
+  }
 }
+
+item = myCart[0][Object.keys(myCart[0])]
+item2 = Object.keys(myCart[1])
+item3 = Object.keys(myCart[2])
+
+console.log(item)
+console.log(item2)
+console.log(item3)
